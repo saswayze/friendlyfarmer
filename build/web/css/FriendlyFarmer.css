@@ -176,8 +176,8 @@ hr {
     font-size: 1.35em;
     padding: 5px;
     padding-bottom: 7px;
-    left: 55%;
-    top: -22px;
+    right: 30%;
+    top: -22px;    text-align: center;
 }
 
 #leftCatCol {
@@ -186,38 +186,53 @@ hr {
     padding: 20px;
 }
 
-#leftCatCol ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#leftCatCol li a {
+.categoryButton {  /*formerly #leftCatCol li*/
     display: block;
     font-size: 1.5em;
     box-sizing: border-box;
     text-align: center;
     background-color: #99ccff;
-    padding: 16px;
+    padding: 0.5em;
     margin: 0px auto;
     width: 160px;
+    height: 2em;
+    margin-bottom: 22px;
     /*text-decoration: none;*/
 }
 
-#leftCatCol li {
-    margin-bottom: 22px;
-}
-
-#leftCatCol li a.active {
+#selectedCategory { /*formerly #leftCatCol li a.active*/
     display: block;
     font-size: 1.5em;
     width: 190px;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     text-align: center;
     background-color: #0099cc;
     color: black;
-    padding: 16px 16px;
     text-decoration: none;
+}
+
+/*product listing table styles*/
+
+#productTable tr{
+    width: 500px;
+}
+
+#productTable tr td{
+    position: relative;
+    vertical-align: middle;
+    padding: 5px 17px;
+}
+
+.lightBlue{
+    background-color: lightblue;
+}
+
+.white{
+    background-color: white;
+}
+
+.smallText{
+    font-size: 0.8em;
 }
 
 .productRow {
